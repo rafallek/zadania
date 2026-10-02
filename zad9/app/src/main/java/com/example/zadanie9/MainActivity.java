@@ -1,12 +1,17 @@
 package com.example.zadanie9;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.widget.RadioButton;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,5 +25,24 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+    }
+
+    public void zaznaczone(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+        TextView tekst1 = findViewById(R.id.tekst);
+        RadioButton button = ((RadioButton) view);
+        if(button.getId() == R.id.czerwony){
+            int kolor = ContextCompat.getColor(this, R.color.czerwony);
+            tekst1.setTextColor(kolor);
+        } else if(button.getId() == R.id.zielony){
+            int kolor = ContextCompat.getColor(this, R.color.zielony);
+            tekst1.setTextColor(kolor);
+        } else if(button.getId() == R.id.niebieski){
+            int kolor = ContextCompat.getColor(this, R.color.niebieski);
+            tekst1.setTextColor(kolor);
+        }
+
+
     }
 }
