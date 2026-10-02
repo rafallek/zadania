@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="pole1">2\n</string>
+    <string name="przycisk1">Wypisz tekst\n</string>
+    <string name="wyczysc">Wyczysc\n</string>
+    <string name="on" > on </string>
+    <string name="off" > off </string>
+    <string name="dostawa" > Dostawa </string>
+    <string name="opakowanie" > Opakowanie </string>
+    <string name="platnosc" > Platnosc </string>
+
+</resources>

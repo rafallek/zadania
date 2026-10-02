@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tekst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodatkowe usługi"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dostawa"
+        android:text="@string/dostawa"
+        android:textSize="12pt"
+        android:onClick="policz"
+        android:textColor="#1F8771"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/platnosc"
+        android:text="@string/platnosc"
+        android:textSize="12pt"
+        android:onClick="policz"
+        android:textColor="#1F8771"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/opakowanie"
+        android:text="@string/opakowanie"
+        android:textSize="12pt"
+        android:textColor="#1F8771"
+        android:onClick="policz"
+        />
+    <TextView
+        android:id="@+id/tekst2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:text=""
+        />
+
+</LinearLayout>
